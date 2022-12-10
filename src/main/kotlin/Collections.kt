@@ -9,15 +9,15 @@ fun main(args: Array<String>) {
 
     val myArray = arrayOf("Kotlin", "Programming", "Comic Books")
 
-//    println(myArray[0])
+    println(myArray[0])
 
-//    for (items in myArray) {
-//        println(items)
-//    }
-//
-//    myArray.forEach {item ->
-//        println(item);
-//    }
+    for (items in myArray) {
+        println(items)
+    }
+
+    myArray.forEach {item ->
+        println(item);
+    }
 
     myArray.forEachIndexed { index, item -> println("$item $index") }
 }
