@@ -5,10 +5,10 @@ Here you'll see about kotlin language.
 - Functions
 - Classes
 - Collection
-- Iterators
+- functions.Iterators
 - Variables
 
-# Collections
+# functions.Collections
 
 In Kotlin, by default a collection is immutable. So you can't add or subtract values from
 that collection once it's initially created.

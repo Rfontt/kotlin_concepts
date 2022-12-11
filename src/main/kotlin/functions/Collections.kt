@@ -1,3 +1,5 @@
+package functions
+
 class Collections {
     fun sayHello(greeting: String, itemToGreet: String): Unit = println("$greeting $itemToGreet")
 }
