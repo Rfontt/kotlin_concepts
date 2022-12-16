@@ -1,7 +1,9 @@
 package interfaces
 
-import classes.Person
-
 interface PersonInfoProvider {
     fun printInfo(): Unit
+}
+
+interface SessionInfoProvider {
+    fun getSessionID(): String
 }

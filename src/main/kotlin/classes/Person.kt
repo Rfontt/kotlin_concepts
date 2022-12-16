@@ -1,11 +1,12 @@
 package classes
 
 import interfaces.PersonInfoProvider
+import interfaces.SessionInfoProvider
 
 class Person(
     val name: String,
     val age: Int
-): PersonInfoProvider {
+): PersonInfoProvider, SessionInfoProvider {
     private var nickName: String? = null
 
         set(value) {
@@ -22,5 +23,9 @@ class Person(
         val nickNameToPrint = nickName ?: "no nickname"
 
         println("$name ($nickNameToPrint) $age")
+    }
+
+    override fun getSessionID(): String {
+        return "Session"
     }
 }
